@@ -31,15 +31,15 @@ const getInfo = async(event) => {
             const tempStatus = arrData[0].weather[0].main;
 
             if (tempStatus == "Clear") {
-                temp_status.innerHTML = "<i class='fas fa - sun'  style='color: #eccc68'></i>"
+                temp_status.innerHTML = "<i class='fas fa-sun'  style='color: #eccc68'></i>"
             } else if (tempStatus == "Clouds") {
-                temp_status.innerHTML = "<i class='fas fa - cloud'  style='color: #f1f2f6'></i>"
+                temp_status.innerHTML = "<i class='fas fa-cloud'  style='color: #f1f2f6'></i>"
 
             } else if (tempStatus == "Rain") {
-                temp_status.innerHTML = "<i class='fas fa - rain'  style='color: #a4b0be'></i>"
+                temp_status.innerHTML = "<i class='fas fa-cloud-rain'  style='color: #a4b0be'></i>"
 
             } else {
-                temp_status.innerHTML = "<i class='fas fa - sun'  style='color: #eccc68'></i>"
+                temp_status.innerHTML = "<i class='fas fa-sun'  style='color: #eccc68'></i>"
             }
             datahide.classList.remove('data_hide');
 
